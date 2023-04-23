@@ -5,7 +5,7 @@
 - Dependency Injection
 ---
 
-**Components and Beans**
+### **Components and Beans**
 
 #### Components in SpringBoot are classes defined by a annotation. The annotations can be:
 - @Component ->detect beans automatically.
@@ -34,7 +34,8 @@ So the name of the bean will be `LedianaBean`.
 
 ### Scope of the Beans
 Scope of the beans means the lifetime of the object.
-- Singleton -> One instance on that object will be created , because a class is a blueprint and you can create multiple objects ,but you want one object of this class so you can use the singleton scope `@Scope("singleton")` in the `@Component` class. For each call you get the same bean
+- Singleton -> One instance on that object will be created , because a class is a blueprint and you can create multiple objects ,but you want one object of this class so you can use the singleton scope `@Scope("singleton")` in the `@Component` class. For each call you get the same bean.
+  
   ![foto](../Assets/SingletonScope.png)
 
 - @Laizy ->By default, all beans in Spring Boot are eagerly initialized, which means that they are created when the application starts up. This can lead to longer startup times and increased memory usage, especially for applications with a large number of beans so the usage of this annotation will do the initialization of the bean when it will be needed.
@@ -46,7 +47,7 @@ Scope of the beans means the lifetime of the object.
 - Application -> are created once per web application and are destroyed when the application is shut down `@Scope("application")`.
 
 
-**Dependency Injection**
+### **Dependency Injection**
 
   Dependency Injection is a design pattern that set the values to the variables and is implemented by using the `@Autowired` annotation that can be used to inject dependencies.
   ```
@@ -59,7 +60,8 @@ public class MyService {
 ```
 The `MyService` class is annotated with `@Service`. The `@Autowired` annotation is used to inject a dependency of type `MyRepository` into the `MyService` bean. When Spring Boot creates an instance of `MyService`, it will automatically inject an instance of `MyRepository` into the `repository` field.
 
-#### The `@Autowired` can be used on Maps , collection.
+ The `@Autowired` can be used on Maps , collection.
+ 
 #### There are some ways to inject the values to the bean :
 - use $ sign -> `@Value("${name}")`.
 - use # -> `@Value("#{5+1-6}")` .
