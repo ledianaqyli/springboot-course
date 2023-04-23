@@ -4,10 +4,10 @@ In this repository will be documented the notes, assignments and projects that w
 
 ---
 ### Stucture:
-- [Notes](../springboot-course/Notes).
-- [Assignments](../springboot-course/Assignments).
-- [Projects](../springboot-course/Projects)
-- [Assets](../springboot-course/Assets)
+- [Notes](https://github.com/ledianaqyli/springboot-course/tree/main/Notes).
+- [Assignments](https://github.com/ledianaqyli/springboot-course/tree/main/Assignments).
+- [Projects](https://github.com/ledianaqyli/springboot-course/tree/main/Projects)
+- [Assets](https://github.com/ledianaqyli/springboot-course/tree/main/Assets)
 
 ---
 @StartTime: April 2023
